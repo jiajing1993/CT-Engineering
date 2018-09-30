@@ -1,14 +1,18 @@
 // ./src/pages/Subscribe.js
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/header.scss';
+import logo from '../logo.svg';
 
 export default class Header extends Component {
   render() {
     return(
       <header>
         <div className="upper-header">
-          <Link to="/">I am logo</Link>
-          <Link to="/service">Services</Link>
+          <Link to="/">
+            <img src={logo} alt=""/>
+          </Link>
+          <Link to="/company">Company</Link>
           <Link to="/project">Projects</Link>
           <Link to="/safety">Safety & Quality</Link>
           <Link to="/gallery">Gallery</Link>

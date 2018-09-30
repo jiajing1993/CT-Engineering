@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
   <BrowserRouter>
-    <App />
+    <App/>
   </BrowserRouter>),
   document.getElementById('root')
 );
