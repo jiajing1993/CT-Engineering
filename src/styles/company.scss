@@ -1,0 +1,25 @@
+div {
+  box-sizing: border-box;
+}
+.sub-header {
+  background-image: url('https://cdn.shopify.com/s/files/1/0101/2522/files/banner_web_1024x1024.jpg?v=1509077052');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  p{
+    display: inline-block;
+  }
+  ul{
+    display: inline-block;
+    right: 0;
+    li{
+      display: inline-block;
+      padding: 0px 20px;
+    }
+  }
+}
+
+article {
+  width: 400px
+}
