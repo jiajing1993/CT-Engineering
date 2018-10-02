@@ -52,7 +52,6 @@ export default class Company extends Component {
             </div>
           )})
         }
-
         </section>
       </div>
     )
