@@ -1,24 +1,32 @@
 header {
-  background-color: rgba(1, 6, 19, 0.75);
+  background-color: rgba(1, 6, 19, 0.90);
   color: white;
   width: 360px;
-  min-height: 100vh;
+  height: 100%;
   position: fixed;
+  font-family: 'Poppins', sans-serif;
   .upper-header{
     a {
       display: block;
       color: white;
       text-decoration: none;
-      padding: 20px;
+      padding: 20px 35px;
+      font-weight: bold;
+      font-size: 16px;
+      img {
+        width: 100px;
+        margin: 50px 0px 100px 0px;
+      }
       &:hover {
         color: yellow;
       }
     }
   }
   .bottom-header {
-    padding: 20px;
+    padding: 20px 35px;
     position: absolute;
     bottom: 0;
     left: 0;
+    font-size: 12px;
   }
 }

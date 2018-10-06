@@ -1,12 +1,23 @@
 .home {
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   color: white;
-  background: black;
-  button {
-    border: 1px solid white;
-    color: white;
-    background: transparent;
-    padding: 20px;
-    border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text-box {
+    font-family: 'Poppins', sans-serif;
+    max-width: 700px;
+    margin-top: -15%;
+    p.title {
+      font-size: 32px;
+      font-weight: 600;
+    }
+    p.description {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: normal;
+      margin-bottom: 30px;
+    }
   }
 }
