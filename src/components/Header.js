@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/header.scss';
-import logo from '../logo.svg';
+import logo from '../images/CT_logo.png';
 
 export default class Header extends Component {
   render() {
@@ -19,7 +19,9 @@ export default class Header extends Component {
         </div>
         <div className="bottom-header">
           <p>CT Engeering and Construction Sdn Bhd 123, Jalan Besar, Kawasan Kecil, 2018, Kuala Lumpur</p>
+          <br/>
           <p>602 - 245 232</p>
+          <br/>
           <p>Copyright © 2018 CT Enigeering and Construction All Rights Reserved.</p>
         </div>
 
