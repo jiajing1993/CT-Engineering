@@ -4,7 +4,6 @@ import '../styles/company.scss'
 
 // customize components
 import PlaceholderImage from '../components/PlaceholderImage'
-import BackgroundImage from '../components/BackgroundImage'
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
 import Button from '../components/Button'

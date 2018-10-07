@@ -19,14 +19,20 @@
 }
 
 .page-jumbotron p {
+  font-family: Poppins;
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .page-jumbotron .link > a {
+  font-family: Poppins;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 25px;
