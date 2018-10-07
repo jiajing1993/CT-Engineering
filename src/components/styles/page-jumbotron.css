@@ -1,0 +1,41 @@
+.page-jumbotron {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+
+.page-jumbotron nav {
+  position: absolute;
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  left: 20px;
+  bottom: 20px;
+}
+
+.page-jumbotron p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.page-jumbotron .link > a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin-right: 10px;
+  border-radius: 3px;
+  transition: all 1s;
+}
+
+.page-jumbotron .link > a:hover {
+  background: rgba(white,0.5);
+  transition: all 1s;
+}

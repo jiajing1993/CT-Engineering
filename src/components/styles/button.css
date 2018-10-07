@@ -1,13 +1,29 @@
 button {
   padding: 13px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  background: transparent;
+  color: #4a4a4a;
+  border: none;
+  border-radius: 26px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+}
+
+button.transparent {
   border: 1px solid white;
   color: white;
   background: transparent;
-  border-radius: 25px;
-  font-size: 14px;
 }
 
-button:hover {
+button.transparent:hover {
   cursor: pointer;
   border: 1px solid white;
   background: white;

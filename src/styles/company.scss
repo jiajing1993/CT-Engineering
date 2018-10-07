@@ -1,25 +1,74 @@
 div {
   box-sizing: border-box;
 }
-.sub-header {
-  background-image: url('https://cdn.shopify.com/s/files/1/0101/2522/files/banner_web_1024x1024.jpg?v=1509077052');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 200px;
-  p{
-    display: inline-block;
-  }
-  ul{
-    display: inline-block;
-    right: 0;
-    li{
-      display: inline-block;
-      padding: 0px 20px;
-    }
-  }
+
+.white {
+  color: white;
+}
+
+.section-title {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.section-article {
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  color: #4a4a4a;
 }
 
 article {
   width: 400px
+}
+
+.vision {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .company-vision {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 120px 80px;
+    width: 100%;
+
+    .info {
+      color: white;
+      text-align: center;
+      max-width: 400px;
+      .info-title {
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 18px;
+      }
+      .info-description {
+        font-family: PTSerif;
+        font-size: 18px;
+        line-height: 1.39;
+      }
+    }
+  }
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .service {
+    width: 50%;
+    flex-shrink: 0;
+  }
 }
