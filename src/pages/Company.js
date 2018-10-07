@@ -1,14 +1,47 @@
 // ./src/pages/Subscribe.js
 import React, { Component } from 'react';
 import '../styles/company.scss'
+
+// customize components
 import PlaceholderImage from '../components/PlaceholderImage'
 import BackgroundImage from '../components/BackgroundImage'
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
 import Button from '../components/Button'
 import Margin from '../components/Utility'
+import ImageCaption from '../components/ImageCaption'
+import Footer from '../components/Footer'
+
+// images
 import jumbotronImage from '../images/company-jumbotron.png'
 import visionImage from '../images/vision.png';
+import IndustrialBuildingConstruction from '../images/photo-list-with-caption-1.png';
+import FabircationStructuralSteel from '../images/photo-list-with-caption-2.png';
+import StorageAndPiping from '../images/photo-list-with-caption-3.png';
+import MaterialHandling from '../images/photo-list-with-caption-4.png';
+
+const SERVICES = [
+  {
+    title: "Industrial Building Construction",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: `${IndustrialBuildingConstruction}`
+  },
+  {
+    title: "Fabircation (Structural Steel)",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: `${FabircationStructuralSteel}`
+  },
+  {
+    title: "Storage Tanks & Piping Works",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: `${StorageAndPiping}`
+  },
+  {
+    title: "Material Handling",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: `${MaterialHandling}`
+  }
+]
 
 export default class Company extends Component {
   render() {
@@ -29,30 +62,42 @@ export default class Company extends Component {
           <Margin size="50px"/>
           <Button>View All Company Photos</Button>
         </Article>
-        <img src={visionImage} alt=""/>
-        <BackgroundImage image_url={visionImage} width="100%">
-          <article>
-            <h1>Company Vision</h1>
-            <p>CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
-          </article>
-          <article>
-            <h1>Company Mission</h1>
-            <p>CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
-          </article>
-        </BackgroundImage>
-        <section>
-
-          <h1>Company Service</h1>
-          { [1,2,3,4].map((index) => { return (
-            <div style={{width: '50%', display: 'inline-block'}}>
-              <BackgroundImage>
-                <p>Industrial Building Construction</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </BackgroundImage>
+        <section className="vision">
+          <img src={visionImage} alt=""/>
+          <div className="company-vision">
+            <div className="info">
+              <h1 className="info-title">Company Vision</h1>
+              <p className="info-description">CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
             </div>
-          )})
-        }
+            <div className="info">
+                <h1 className="info-title">Company Mission</h1>
+                <p className="info-description">CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
+            </div>
+          </div>
         </section>
+
+        <Article>
+          <h1 className="section-title">Company Service</h1>
+        </Article>
+        <div className="services">
+          {
+            SERVICES.map((service) => { return (
+              <div className="service">
+                <ImageCaption
+                  image={service.image}
+                  title={service.title}
+                  description={service.description}
+                />
+              </div>
+            )})
+          }
+        </div>
+        <Margin size="50px"/>
+        <Article>
+          <Button>View All Company Photos</Button>
+        </Article>
+        <Footer />
+
       </div>
     )
   }

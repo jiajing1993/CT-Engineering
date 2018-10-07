@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import './styles/page-jumbotron.css'
 
 export default class PageJumbotron extends Component {
-  // expecting image
-  // title
   render() {
     const { title, image } = this.props
     return (
