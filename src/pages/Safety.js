@@ -10,8 +10,10 @@ import BackgroundImage from '../components/BackgroundImage'
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
 import ImageCaption from '../components/ImageCaption'
-import Margin from '../components/Utility'
+import {Margin, Padding} from '../components/Utility'
 import Hero from '../components/Hero'
+import HeroPyjamas from '../components/HeroPyjamas'
+import Footer from '../components/Footer'
 
 // images
 import jumbotronImage from '../images/safety/jumbotron.png'
@@ -20,6 +22,10 @@ import Image2 from '../images/safety/safety_2.png'
 import Image3 from '../images/safety/safety_3.png'
 import Image4 from '../images/safety/safety_4.png'
 import Image5 from '../images/safety/safety_5.png'
+import Image6 from '../images/safety/safety_6.png'
+import Image7 from '../images/safety/safety_7.png'
+import Image8 from '../images/safety/safety_8.png'
+import Image9 from '../images/safety/safety_9.png'
 
 export default class Safety extends Component {
   render() {
@@ -114,54 +120,81 @@ export default class Safety extends Component {
           </p>
           <p className="section-article">The safety unit will develop the Project Safety Manual for each individual project pertaining to the scope of works and individual client’s requirements.</p>
         </Article>
-        <section className="vision">
-          <img src={Image5} alt=""/>
-          <div className="company-vision">
-            <h1>Objective</h1>
-            <p>C.T Engineering & Construction Sdn Bhd. Will conduct its operations to meet its objectives:</p>
-            <p>
-              To ensure workplace safety and encourage good Occupational Safety and Health to Employees and others who may be affected alike.
+        <HeroPyjamas image={Image5}>
+          <Padding size="80px">
+            <div className="grids objective">
+              <div className="grid-10">
+                <h1>Objective</h1>
+                <Margin size="30px" />
+                <p>C.T Engineering & Construction Sdn Bhd. Will conduct its operations to meet its objectives:</p>
+                <p>
+                  To ensure workplace safety and encourage good Occupational Safety and Health to Employees and others who may be affected alike.
 
-              To increase employee's Moral, Safe Working ethics and good discipline to achieve Free accident status in the business operations.
+                  To increase employee's Moral, Safe Working ethics and good discipline to achieve Free accident status in the business operations.
 
-              To establish better relations between Management/Employees.
+                  To establish better relations between Management/Employees.
 
-              To lower operating insurance costs by safe operating performance.
+                  To lower operating insurance costs by safe operating performance.
 
-              To maintain local and International Standards in Occupational Safety and Health.
+                  To maintain local and International Standards in Occupational Safety and Health.
 
-              Prevent 'Loss Time' on Man-hours and Production.
-            </p>
+                  Prevent 'Loss Time' on Man-hours and Production.
+                </p>
+              </div>
+            </div>
+          </Padding>
+        </HeroPyjamas>
+        <Article maxWidth="550px">
+          <h1 className="section-title">Specific Targets</h1>
+          <p className="section-article">In conducting C.T Engineering & Construction Sdn Bhd. Business operations and activities, its employees and others involved will strive to:</p>
+          <p className="section-article">
+            <ul>
+              <li>Prevent all accidents and injuries.</li>
+              <li>Prevent all Occupational illnesses.</li>
+              <li>Prevent pollution of the Environment.</li>
+              <li>Prevent Fire hazards and obstacles.</li>
+            </ul>
+          </p>
+        </Article>
+        <section>
+          <div className="grids">
+            <div className="grid">
+              <HeroPyjamas image={Image6}>
+                <Padding size="30px 20px">
+                  <h1 className="big-text dark-text">Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
+                </Padding>
+              </HeroPyjamas>
+            </div>
+            <div className="grid">
+              <HeroPyjamas image={Image7}>
+                <Padding size="30px 20px">
+                  <h1 className="big-text white-text">Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
+                </Padding>
+              </HeroPyjamas>
+            </div>
+            <div className="grid">
+              <HeroPyjamas image={Image8}>
+                <Padding size="30px 20px">
+                  <h1 className="big-text dark-text">Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
+                </Padding>
+              </HeroPyjamas>
+            </div>
           </div>
         </section>
-        <section>
-          <h1>Specific Targets</h1>
-          <p>In conducting C.T Engineering & Construction Sdn Bhd. Business operations and activities, its employees and others involved will strive to:</p>
-          <ul>
-            <li>Prevent all accidents and injuries.</li>
-            <li>Prevent all Occupational illnesses.</li>
-            <li>Prevent pollution of the Environment.</li>
-            <li>Prevent Fire hazards and obstacles.</li>
-          </ul>
-        </section>
-        <section>
-          <BackgroundImage width="33%">
-            <h1>Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
-          </BackgroundImage>
-          <BackgroundImage width="33%">
-            <h1>Employers have duties concerning the provision and use of personal protective equipment (PPE) at work.</h1>
-          </BackgroundImage>
-          <BackgroundImage width="33%">
-            <h1>Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
-          </BackgroundImage>
-        </section>
-        <section>
-          <BackgroundImage width="100%">
-            <h1>Safe Working Environment and Operating Culture</h1>
-            <p>C.T Engineering & Construction Sdn Bhd. Primary goal is to manage by developing a "SAFE WORKING ENVIROMENT AND OPERATING CULTURE" in the business operations and activities leading to an accident – free workplace and Maintain at all times good healthy practices for employees. Ensure co-operation with building management to develop and execute contingency plans to deal with possible emergency and adverse impact to employees.</p>
-          </BackgroundImage>
-        </section>
-
+        <HeroPyjamas image={Image9}>
+          <Padding size="80px">
+            <div className="grids operating-culture center">
+              <div className="grid-5">
+                <h1>Safe Working Environment and Operating Culture</h1>
+                <Margin size="40px" />
+                <p>C.T Engineering & Construction Sdn Bhd. Primary goal is to manage by developing a "SAFE WORKING ENVIROMENT AND OPERATING CULTURE" in the business operations and activities leading to an accident – free workplace and Maintain at all times good healthy practices for employees. Ensure co-operation with building management to develop and execute contingency plans to deal with possible emergency and adverse impact to employees.</p>
+              </div>
+              <div className="grid-5">
+              </div>
+            </div>
+          </Padding>
+        </HeroPyjamas>
+        <Footer />
       </div>
     )
   }
