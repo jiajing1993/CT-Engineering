@@ -1,0 +1,23 @@
+.hero {
+  height: 80vh;
+  width: 100%;
+  background-color: red;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .text {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}

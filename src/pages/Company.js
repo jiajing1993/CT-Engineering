@@ -4,11 +4,10 @@ import '../styles/company.scss'
 
 // customize components
 import PlaceholderImage from '../components/PlaceholderImage'
-import BackgroundImage from '../components/BackgroundImage'
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
 import Button from '../components/Button'
-import Margin from '../components/Utility'
+import { Margin } from '../components/Utility'
 import ImageCaption from '../components/ImageCaption'
 import Footer from '../components/Footer'
 
@@ -51,7 +50,8 @@ export default class Company extends Component {
         <Article>
           <h1 className="section-title">Company Background</h1>
           <p className="section-article">
-            C.T. Engineering & Construction Sdn. Bhd. was incorporated in November 1996, formerly known as C.T. Engineering & Construction established in 1991. CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.
+              C.T. Engineering & Construction Sdn. Bhd. was incorporated in November 1996,
+              formerly known as C.T. Engineering & Construction established in 1991. CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.
             <br/>
             <br/>
             Our noted quality work and timely handover soon has us into numerous industrial constructions, turnkey and others building projects. Good project management and implementation resting on the shoulders of qualified management personnel goes without saying as it has been the pillar of CT from day one. For it is through stringent progress review and control that we are forging rapidly as a builder in our own class.
@@ -77,7 +77,7 @@ export default class Company extends Component {
         </section>
 
         <Article>
-          <h1 className="section-title">Company Service</h1>
+          <h1 className="section-title">Company Services</h1>
         </Article>
         <div className="services">
           {
