@@ -289,6 +289,7 @@ export default class Project extends Component {
     this.setState({
       showedProject: projects[id - 1]
     })
+    console.log(this.state.showedProject)
   }
 
   handleFilter = (status) => {
