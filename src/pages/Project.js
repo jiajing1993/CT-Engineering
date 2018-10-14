@@ -6,105 +6,271 @@ import Article from '../components/Article'
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../styles/project.scss'
 
-import Image1 from '../images/gallery/gallery_1.jpg'
-import Image2 from '../images/gallery/gallery_2.jpg'
-import Image3 from '../images/gallery/gallery_3.jpg'
-import Image4 from '../images/gallery/gallery_4.jpg'
+import apex1 from '../images/projects/apex/image1.JPG'
+import apex2 from '../images/projects/apex/image2.JPG'
+import apex3 from '../images/projects/apex/image3.JPG'
+import apex4 from '../images/projects/apex/image4.JPG'
 
-import apex from '../images/projects/apex/image1.JPG'
-import cSteinJohor from '../images/projects/c-steinweg(johor)/image1.JPG'
-import cSteinKlang from '../images/projects/c-steinweg(klang)/image1.JPG'
-import honda from '../images/projects/honda/image1.JPG'
-import lss from '../images/projects/lss/image1.JPG'
-import pantech from '../images/projects/pantech/image1.JPG'
-import pantechReality from '../images/projects/pantech-reality/image1.JPG'
-import scanteak from '../images/projects/scanteak/image1.JPG'
-import unigra from '../images/projects/unigra/image1.JPG'
-import xinhwa from '../images/projects/xinhwa/image1.JPG'
+import cSteinJohor1 from '../images/projects/c-steinweg(johor)/image1.JPG'
+import cSteinJohor2 from '../images/projects/c-steinweg(johor)/image2.JPG'
+import cSteinJohor3 from '../images/projects/c-steinweg(johor)/image3.JPG'
+
+import cSteinKlang1 from '../images/projects/c-steinweg(klang)/image1.JPG'
+import cSteinKlang2 from '../images/projects/c-steinweg(klang)/image2.JPG'
+import cSteinKlang3 from '../images/projects/c-steinweg(klang)/image3.JPG'
+
+import honda1 from '../images/projects/honda/image1.JPG'
+import honda2 from '../images/projects/honda/image2.JPG'
+import honda3 from '../images/projects/honda/image3.JPG'
+
+import lss1 from '../images/projects/lss/image1.JPG'
+import lss2 from '../images/projects/lss/image2.JPG'
+import lss3 from '../images/projects/lss/image3.JPG'
+import lss4 from '../images/projects/lss/image4.JPG'
+
+import pantech1 from '../images/projects/pantech/image1.JPG'
+import pantech2 from '../images/projects/pantech/image2.JPG'
+import pantech3 from '../images/projects/pantech/image3.JPG'
+import pantech4 from '../images/projects/pantech/image4.JPG'
+
+import pantechReality1 from '../images/projects/pantech-reality/image1.JPG'
+import pantechReality2 from '../images/projects/pantech-reality/image2.JPG'
+import pantechReality3 from '../images/projects/pantech-reality/image3.JPG'
+import pantechReality4 from '../images/projects/pantech-reality/image4.JPG'
+
+import scanteak1 from '../images/projects/scanteak/image1.JPG'
+import scanteak2 from '../images/projects/scanteak/image2.JPG'
+import scanteak3 from '../images/projects/scanteak/image3.JPG'
+import scanteak4 from '../images/projects/scanteak/image4.JPG'
+
+import unigra1 from '../images/projects/unigra/image1.JPG'
+import unigra2 from '../images/projects/unigra/image2.JPG'
+import unigra3 from '../images/projects/unigra/image3.JPG'
+import unigra4 from '../images/projects/unigra/image4.JPG'
+import unigra5 from '../images/projects/unigra/image5.JPG'
+
+import xinhwa1 from '../images/projects/xinhwa/image1.JPG'
+import xinhwa2 from '../images/projects/xinhwa/image2.JPG'
+import xinhwa3 from '../images/projects/xinhwa/image3.JPG'
+import xinhwa4 from '../images/projects/xinhwa/image4.JPG'
 
 
 
 const projects = [
   {
     id: 1,
-    title: "PROPOSED 56 UNIT OF LIGHT INDUSTRY FACTORY",
-    client : "VC MERIT SDN BHD",
-    completionDate: "JUNE 2018",
-    value: "RM 56 MILLION",
+    status: "completed",
+    title: "56 Units of Light Industry Factory",
+    client : "VC Merit Sdn. Bhd",
+    completionDate: "June 2018",
+    value: "RM 56 Million",
     business: "Industrial Park",
-    image: `${apex}`
+    image: [
+      {
+        original: `${apex1}`
+      },
+      {
+        original: `${apex2}`
+      },
+      {
+        original: `${apex3}`
+      },
+      {
+        original: `${apex4}`
+      }
+    ]
   },{
     id: 2,
-    title: "PROPOSED CONSTRUCTION OF ONE (1) UNIT METAL STORAGE WAREHOUSE, TWO (2)UNIT CHEMICAL STORAGE WAREHOUSE (BLOK A & B), TWO (2) UNIT (NON-HAZARDOUS- CLASS B & C) WAREHOUSE AND TWO (2) UNIT TWO (2) STOREY OFFICE BUILDING, CANTEEN AND OTHER ANCILLARY BUILDING",
-    client: "C.STEINWEG LOGISTICS (MALAYSIA) SDN BHD",
-    completionDate: "DECEMBER 2018",
-    value: "RM 40 MILLION",
-    business: "TRANSPORTATION & LOGISTIC SERVICES",
-    image: `${cSteinKlang}`
+    status: "onGoing",
+    title: "1 unit of metal storage warehouse, 2 units of chemical storage warehouse, 2 units of non-hazardous warehouse and 2 units double storey office building, canteen, and other ancillary building",
+    client: "C.Steinweg Logistics (Malaysia) Sdn. Bhd",
+    completionDate: "December 2018",
+    value: "RM 40 Million",
+    business: "Transportation & Logistic Services",
+    image: [
+      {
+        original: `${cSteinKlang1}`
+      },
+      {
+        original: `${cSteinKlang2}`
+      },
+      {
+        original: `${cSteinKlang3}`
+      }
+    ]
   },{
     id: 3,
-    title: "PROPOSED CONSTRUCTION OF ONE (1) SHOW ROOM, SERVICE CENTRE AND VEHICLE/CAR STORAGE",
-    client: "KAH MOTOR CO. SDN. BHD",
-    completionDate: "JULY 2016",
-    value: "RM 15 MILLION",
-    business: "HONDA 4S CENTRE (SALES, SERVICES, SPARE PARTS AND A BODY AND PAINT CENTRE)",
-    image: `${honda}`
+    status: "completed",
+    title: "1 showroom, service centre and vehicle/car storage",
+    client: "Kah Motor Co. Sdn. Bhd",
+    completionDate: "July 2016",
+    value: "RM 15 Million",
+    business: "Honda 4S Center (Sales, Services, Spare Parts & Body, and Paint Cantre)",
+    image: [
+      {
+        original: `${honda1}`
+      },
+      {
+        original: `${honda2}`
+      },
+      {
+        original: `${honda3}`
+      }
+    ]
   },{
     id: 4,
-    title: "PROPOSED CONSTRUCTION OF TWO (2) BLOCKS ONE STOREY FACTORY BUILDING, ONE (1) UNIT THREE STOREY OFFICE BUILDING, TANK FARM AND OTHER ANCILLARY BUILDING FOR PHASE 1 AND TWO (2) BLOCKS ONE STOREY FACTORY BUILDING, ONE (1) UNIT FIVE STOREY OFFICE BUILDING FOR PHASE 2",
-    client: "PANTECH STAINLESS & ALLOY INDUSTRIES SDN. BHD",
+    status: "completed",
+    title: "2 blocks single storey factory building, 1 unit triple storey office building, tank farm and other ancillary building. 2 blocks single sorey factory building, 1 unit of five storey office building",
+    client: "Pantech Stainless & Alloy Industries Sdn. Bhd",
     completionDate: "Mar 2013",
-    value: "RM 67 MILLION",
+    value: "RM 67 Million",
     business: "One-Stop Centre for stainless steel & alloy pipes, fittings, flanges, valves, and other components",
-    image: `${pantech}`
+    image: [
+      {
+        original: `${pantech1}`
+      },
+      {
+        original: `${pantech2}`
+      },
+      {
+        original: `${pantech3}`
+      },
+      {
+        original: `${pantech4}`
+      }
+    ]
   },{
     id: 5,
-    title: "PROPOSED CONSTRUCTION OF TWO (2) BLOCKS ONE STOREY CHEMICAL WAREHOUSE, ONE (1) UNIT TWO STOREY OFFICE BUILDING AND OTHER ANCILLARY BUILDING",
-    client: "C.STEINWEG LOGISTICS (JOHOR) SDN BHD",
-    completionDate: "AUGUST 2018",
-    value: "RM 50 MILLION",
+    status: "completed",
+    title: "2 blocks single storey chemical warehouse, 1 unit of double storey building and other ancillary building",
+    client: "C.Steinweg Logistics (Johor) Sdn. Bhd",
+    completionDate: "August 2018",
+    value: "RM 50 Million",
     business: "TRANSPORTATION & LOGISTIC SERVICES",
-    image: `${cSteinJohor}`
+    image: [
+      {
+        original: `${cSteinJohor1}`
+      },
+      {
+        original: `${cSteinJohor2}`
+      },
+      {
+        original: `${cSteinJohor3}`
+      }
+    ]
   },{
     id: 6,
-    title: "PROPOSED CONSTRUCTION OF ONE (1) UNIT ONE STOREY FACTORY BUILDING COMPOSED OF FOOD PRODUCTION WAREHOUSE, PACKAGING ROOM, FINISHED GOODS STORAGE, LOGISTIC WAREHOUSE, ONE (1) UNIT TWO STOREY OFFICE BUILDING, TWO (2) UNIT UTILITY BUILDING, TWO (2) UNIT PUMP HOUSE, ONE (1) UNIT TNB ELECTRIC BUILDING, PIPING WORKS AND STORAGE TANKS",
-    client: "UNIGRA FOOD PROCESSING ASIA PACIFIC SDN BHD",
-    completionDate: "DECEMBER 2018",
-    value: "RM 55 MILLION",
+    status: "onGoing",
+    title: "1 unit of single storey factory building composed of food production warehouse, packaging room, finsihed goods storage, logistic warehouse, 1 unit of double storey office building, 2 units utility building, 2 units of pump house, 1 units of TNB electric building, piping works and storage tanks",
+    client: "Unigra Food Processing Asia Pacific Sdn. Bhd",
+    completionDate: "December 2018",
+    value: "RM 55 Million",
     business: "FOOD FACTORY ",
-    image: `${unigra}`
+    image: [
+      {
+        original: `${unigra1}`
+      },
+      {
+        original: `${unigra2}`
+      },
+      {
+        original: `${unigra3}`
+      },
+      {
+        original: `${unigra4}`
+      },
+      {
+        original: `${unigra5}`
+      }
+    ]
   },{
     id: 7,
-    title: "PROPOSED CONSTRUCTION OF ONE (1) BLOCK ONE STOREY WAREHOUSE BUILDING, ONE (1) UNIT TWO STOREY OFFICE BUILDING AND OTHER ANCILLARY BUILDINGS AT KAWASAN PERINDUSTRIAN PASIR GUDANG ZON 12B, JOHOR DARUL TAKZIM",
-    client: "PANTECH REALTY SDN. BHD",
-    completionDate: "DECEMBER 2018",
-    value: "RM 16.5 MILLION",
+    status: "onGoing",
+    title: "Single storey warehouse building, Double storey office building and other ancillary buildings",
+    client: "Pantech Reality Sdn. Bhd",
+    completionDate: "December 2018",
+    value: "RM 16.5 Million",
     business: "Factory Warehouse for stainless steel & alloy pipes, fittings, flanges, valves, and other components.",
-    image: `${pantechReality}`
+    image: [
+      {
+        original: `${pantechReality1}`
+      },
+      {
+        original: `${pantechReality2}`
+      },
+      {
+        original: `${pantechReality3}`
+      },
+      {
+        original: `${pantechReality4}`
+      }
+    ]
   },{
     id: 8,
-    title: "PROPOSED CONSTRUCTION OF MEDIUM INDUSTRY CONSIST OF 1 UNIT 2 - STOREY FACTORY WITH 3 STOREY OFFICE, 1 UNIT MAIN GUARD HOUSE WITH SHELTER, 1 UNIT SECONDARY GUARD HOUSE, 1 UNIT MAIN SWITCH STATION (SSU), 1 UNIT CONSUMER ROOM AND OTHER ANCILLARY BUILDINGS",
-    client: "LEE SOON SENG PLASTIC INDUSTRIES SDN. BHD",
-    completionDate: "APRIL 2018",
-    value: "RM 33 MILLION",
-    business: "Leading vacuum former in South East Asia of clear disposable food packaging container such as clamshell, tray blister, lunch box and etc. (A Market Leader in Thermoforming and plastic sheet extrusion)",
-    image: `${lss}`
+    status: "completed",
+    title: "Medium Industry, consists of double storey factory, triple storey office, guard house with shelter, secondary guard house, main switch station(SSU), consumer room and other ancillary buildings",
+    client: "Lee Soon Seng Plastic Industries Sdn. Bhd",
+    completionDate: "April 2018",
+    value: "RM 33 Million",
+    business: "Leading vacuum former in South East Asia of clear disposable food packaging container such as clamshell, tray blister, lunch box and etc.",
+    image: [
+      {
+        original: `${lss1}`
+      },
+      {
+        original: `${lss2}`
+      },
+      {
+        original: `${lss3}`
+      },
+      {
+        original: `${lss4}`
+      }
+    ]
   },{
     id: 9,
-    title: "Proposed One Unit Warehouse, 2 Storey Office Building and Other Ancillary Building ",
+    status: "completed",
+    title: "Warehouse, double storey office building and other ancillary building",
     client: "Scanteak (M) Sdn. Bhd",
     completionDate: "Oct 2017",
-    value: "RM 10M",
+    value: "RM 10 Million",
     business: "Home Furniture Manufacturer",
-    image: `${scanteak}`
+    image: [
+      {
+        original: `${scanteak1}`
+      },
+      {
+        original: `${scanteak2}`
+      },
+      {
+        original: `${scanteak3}`
+      },
+      {
+        original: `${scanteak4}`
+      }
+    ]
   },{
     id: 10,
-    title: "Proposed One Unit Warehouse, 3 Storey Office Building and Other Ancillary Building for Phase 1 & 2",
+    status: "completed",
+    title: "Warehouse, Triple office building and other ancillary buildings",
     client: "Xin Hwa Trading & Transport Sdn. Bhd",
     completionDate: "August 2017",
     value: "RM 29 Million",
     business: "Transportation & Logistic Services",
-    image: `${xinhwa}`
+    image: [
+      {
+        original: `${xinhwa1}`
+      },
+      {
+        original: `${xinhwa2}`
+      },
+      {
+        original: `${xinhwa3}`
+      },
+      {
+        original: `${xinhwa4}`
+      }
+    ]
   }
 ]
 
@@ -114,7 +280,8 @@ export default class Project extends Component {
   constructor(props){
     super(props)
     this.state = {
-      showedProject: projects[0]
+      showedProject: projects[0],
+      filterProjects: projects,
     }
   }
 
@@ -124,32 +291,30 @@ export default class Project extends Component {
     })
   }
 
+  handleFilter = (status) => {
+    if (status === "all"){
+      this.setState({
+        filterProjects: projects
+      })
+    }else {
+      this.setState({
+        filterProjects: projects.filter(project => project.status === status )
+      })
+    }
+  }
+
   render() {
-    const images = [
-      {
-        original: `${this.state.showedProject.image}`
-      },
-      {
-        original: `${Image2}`
-      },
-      {
-        original: `${Image3}`
-      },
-      {
-        original: `${Image4}`
-      }
-    ]
     return(
       <div>
         <div className="current-company">
-          <ImageGallery items={images}
+          <ImageGallery items={this.state.showedProject.image}
             showThumbnails={false}
             showBullets={true}
             showPlayButton={false}
             showFullscreenButton={false} />
           <div className="company-description">
             <p className="name">{this.state.showedProject.client}</p>
-            <div className="info line-clamp">
+            <div className="info">
               <span>Scope of Work</span>
               { this.state.showedProject.title }
             </div>
@@ -168,14 +333,20 @@ export default class Project extends Component {
             </p>
           </div>
         </div>
+        <div className="filter-button">
+          <button onClick={() => this.handleFilter("all")}>All</button>
+          <button onClick={() => this.handleFilter("completed")}>Completed</button>
+          <button onClick={() => this.handleFilter("onGoing")}>OnGoing</button>
+        </div>
+
         <div className="projects">
           {
-            projects.map((project) => { return (
-              <div className="project" onClick={() => this.handleClick(project.id)}>
+            this.state.filterProjects.map((project) => { return (
+              <div key={project.id} className="project" onClick={() => this.handleClick(project.id)}>
                 <ImageCaption
-                  image={project.image}
+                  image={project.image[0].original}
                   title={project.client}
-                  description={project.value}
+                  description={""}
                 />
               </div>
             )})
