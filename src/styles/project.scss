@@ -1,7 +1,10 @@
 .image-gallery-slide {
   max-height: 600px;
-
+  .image-gallery-image{
+    max-height: 600px;
+  }
   img {
+    height: 600px;
     object-fit: cover;
   }
 }
@@ -26,8 +29,8 @@
     position: absolute;
     bottom: 20px;
     left: 50px;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     background-color: rgba(black, 0.7);
     color: white;
     padding: 20px;
@@ -40,9 +43,8 @@
       color: #ffffff;
       margin-bottom: 20px;
     }
-    div.info {
+    .info {
       margin-bottom: 20px;
-      width: 250px;
       overflow: hidden;
       span {
         display: block;
@@ -50,20 +52,21 @@
       }
       p{
         font-size: 14px;
-        font-weight: 600;
+        font-weight: bold;
       }
-
-      border: 1px solid white;
-      &.line-clamp {
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
-      }
-
-
     }
   }
 }
+.filter-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+  padding-bottom: 0px;
+  button {
+    margin-left: 20px;
+  }
+}
+
 
 .projects {
   width: 100%;

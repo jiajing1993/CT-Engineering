@@ -17,6 +17,10 @@ button:hover {
   transition: all 0.5s;
 }
 
+button:focus {
+  outline: none;
+}
+
 button.transparent {
   border: 1px solid white;
   color: white;
