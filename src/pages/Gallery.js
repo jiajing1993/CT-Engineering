@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import PhotoGallery from 'react-grid-gallery';
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
+import Footer from '../components/Footer'
 import jumbotronImage from '../images/company-jumbotron.png'
 
 import '../styles/gallery.scss'
