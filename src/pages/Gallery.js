@@ -124,6 +124,7 @@ export default class Gallery extends Component {
         <section className="gallery-section">
           <PhotoGallery images={IMAGES} rowHeight={250} />
         </section>
+        <Footer />
       </div>
     )
   }

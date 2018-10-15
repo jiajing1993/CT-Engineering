@@ -360,6 +360,7 @@ export default class Project extends Component {
             )})
           }
         </div>
+        <Footer />
       </div>
     )
   }
