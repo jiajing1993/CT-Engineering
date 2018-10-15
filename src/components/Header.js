@@ -8,14 +8,14 @@ export default class Header extends Component {
   constructor(props){
     super(props)
     this.state = {
-      isHidden: false
+      isHidden: false,
     }
   }
 
   toggleHeader = () => {
     console.log(this.state.isHidden)
     this.setState({
-      isHidden: !this.state.isHidden
+      isHidden: !this.state.isHidden,
     })
   }
   render() {
@@ -40,7 +40,11 @@ export default class Header extends Component {
           </div>
         </header>
         <div className="toggle" onClick={this.toggleHeader}>
-          menu
+          <div class={`nav-icon1 ${ this.state.isHidden ? "open" : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     )
