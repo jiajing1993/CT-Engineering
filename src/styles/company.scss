@@ -72,3 +72,17 @@ article {
     flex-shrink: 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  article {
+    text-align: left
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-article {
+    font-size: 16px;
+  }
+}

@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/header.scss';
-import logo from '../images/CT_logo.png';
+import logo from '../images/ct-logo.png';
 
 export default class Header extends Component {
   constructor(props){
@@ -32,11 +32,12 @@ export default class Header extends Component {
             <Link to="/gallery">Gallery</Link>
           </div>
           <div className="bottom-header">
-            <p>CT Engeering and Construction Sdn Bhd 123, Jalan Besar, Kawasan Kecil, 2018, Kuala Lumpur</p>
+            <p>C.T. Engineering & Construction Sdn. Bhd.</p>
+            <p>764, Jalan Platinum Utama, 81700 Pasir Gudang, Johor</p>
             <br/>
-            <p>602 - 245 232</p>
+            <p>+6 07-251 1192</p>
             <br/>
-            <p>Copyright © 2018 CT Enigeering and Construction All Rights Reserved.</p>
+            <p>Copyright © 2018 - All Rights Reserved.</p>
           </div>
         </header>
         <div className="toggle" onClick={this.toggleHeader}>
