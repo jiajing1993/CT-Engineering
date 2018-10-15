@@ -37,6 +37,7 @@ article {
     left: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 120px 80px;
     width: 100%;
@@ -44,7 +45,9 @@ article {
     .info {
       color: white;
       text-align: center;
-      max-width: 400px;
+      width: 400px;
+      flex-shrink: 0;
+      margin-bottom: 20px;
       .info-title {
         font-family: Poppins;
         font-size: 30px;
@@ -84,5 +87,27 @@ article {
 
   .section-article {
     font-size: 16px;
+  }
+
+  .vision {
+    .company-vision {
+      padding: 40px 20px;
+      .info {
+        width: 80%;
+        margin-bottom: 50px;
+        .info-title {
+          font-size: 24px;
+          margin-bottom: 6px;
+        }
+        .info-description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .services {
+    .service {
+      width: 100%;
+    }
   }
 }
