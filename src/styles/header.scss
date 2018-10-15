@@ -6,7 +6,7 @@ header {
   position: fixed;
   font-family: 'Poppins', sans-serif;
   transition: all 0.5s;
-  z-index: 15;
+  z-index: 30;
   .upper-header{
     a {
       display: block;
@@ -103,6 +103,7 @@ header {
 
 @media only screen and (max-width: 1000px) {
   header {
+    background-color: rgba(1, 6, 19, 1.0);
     transform: translateX(-100%);
     transition: all 0.5s;
     &.hide {

@@ -41,7 +41,7 @@ export default class Header extends Component {
           </div>
         </header>
         <div className="toggle" onClick={this.toggleHeader}>
-          <div class={`nav-icon1 ${ this.state.isHidden ? "open" : ""}`}>
+          <div className={`nav-icon1 ${ this.state.isHidden ? "open" : ""}`}>
             <span></span>
             <span></span>
             <span></span>
