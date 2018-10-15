@@ -113,7 +113,7 @@ export default class Gallery extends Component {
   render() {
     return(
       <div>
-        <PageJumbotron title="Images Gallery" image={jumbotronImage}/>
+        <PageJumbotron title="Images Gallery" image={jumbotronImage} anchors={[""]}/>
         <Article>
           <h1 className="section-title">Company Gallery</h1>
           <p className="section-article">

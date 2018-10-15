@@ -2,16 +2,24 @@ import React, { Component } from 'react'
 import './styles/page-jumbotron.css'
 
 export default class PageJumbotron extends Component {
+  string_parameterize = (str1) => {
+    return str1.trim().toLowerCase().replace(/[^a-zA-Z0-9 -]/, "").replace(/\s/g, "-");
+  };
   render() {
     const { title, image } = this.props
+
     return (
       <section className="page-jumbotron" style={{backgroundImage: `url(${image})`}} >
         <nav>
           <p>{ title }</p>
           <div className="link">
-            <a href="#">Background</a>
-            <a href="#">Mission</a>
-            <a href="#">Vision</a>
+            {
+              this.props.anchors.map((anchor) => {
+                return (
+                  <a href={`#${this.string_parameterize(anchor)}`}>{anchor}</a>
+                )
+              })
+            }
           </div>
         </nav>
       </section>
