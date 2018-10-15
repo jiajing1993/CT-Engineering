@@ -12,7 +12,6 @@ export default class Home extends Component {
           <p className="description">We will build rapport, trust and the foundation in which our reputation will rest rock solid and assure into the future.</p>
           <Button>Play Video</Button>
         </div>
-
       </div>
     )
   }

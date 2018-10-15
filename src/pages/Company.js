@@ -1,6 +1,8 @@
 // ./src/pages/Subscribe.js
 import React, { Component } from 'react';
 import '../styles/company.scss'
+import ScrollableAnchor from 'react-scrollable-anchor'
+import MediaQuery from 'react-responsive';
 
 // customize components
 import PlaceholderImage from '../components/PlaceholderImage'
@@ -14,6 +16,7 @@ import Footer from '../components/Footer'
 // images
 import jumbotronImage from '../images/company-jumbotron.png'
 import visionImage from '../images/vision.png';
+import visionImageMobile from '../images/vision-mobile.png';
 import IndustrialBuildingConstruction from '../images/photo-list-with-caption-1.png';
 import FabircationStructuralSteel from '../images/photo-list-with-caption-2.png';
 import StorageAndPiping from '../images/photo-list-with-caption-3.png';
@@ -46,39 +49,58 @@ export default class Company extends Component {
   render() {
     return(
       <div className="company">
-        <PageJumbotron title="Company Profile" image={jumbotronImage}/>
-        <Article>
-          <h1 className="section-title">Company Background</h1>
-          <p className="section-article">
-              C.T. Engineering & Construction Sdn. Bhd. was incorporated in November 1996,
-              formerly known as C.T. Engineering & Construction established in 1991. CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.
-            <br/>
-            <br/>
-            Our noted quality work and timely handover soon has us into numerous industrial constructions, turnkey and others building projects. Good project management and implementation resting on the shoulders of qualified management personnel goes without saying as it has been the pillar of CT from day one. For it is through stringent progress review and control that we are forging rapidly as a builder in our own class.
-          </p>
-          <Margin size="80px"/>
-          <PlaceholderImage width="45%"/>
-          <PlaceholderImage width="45%"/>
-          <Margin size="50px"/>
-          <Button>View All Company Photos</Button>
-        </Article>
-        <section className="vision">
-          <img src={visionImage} alt=""/>
-          <div className="company-vision">
-            <div className="info">
-              <h1 className="info-title">Company Vision</h1>
-              <p className="info-description">CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
-            </div>
-            <div className="info">
-                <h1 className="info-title">Company Mission</h1>
-                <p className="info-description">CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
-            </div>
-          </div>
-        </section>
+        <PageJumbotron title="Company Profile" image={jumbotronImage} anchors={["company", "services", "mission"]}/>
+        <ScrollableAnchor id={'company'}>
+          <Article>
+            <h1 className="section-title">Company Background</h1>
+            <p className="section-article">
+                C.T. Engineering & Construction Sdn. Bhd. was incorporated in November 1996,
+                formerly known as C.T. Engineering & Construction established in 1991. CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.
+              <br/>
+              <br/>
+              Our noted quality work and timely handover soon has us into numerous industrial constructions, turnkey and others building projects. Good project management and implementation resting on the shoulders of qualified management personnel goes without saying as it has been the pillar of CT from day one. For it is through stringent progress review and control that we are forging rapidly as a builder in our own class.
+            </p>
+            <Margin size="80px"/>
+            <MediaQuery query="(max-width: 700px)">
+              <PlaceholderImage width="100%"/>
+              <PlaceholderImage width="100%"/>
+            </MediaQuery>
+            <MediaQuery query="(min-width: 701px)">
+              <PlaceholderImage width="45%"/>
+              <PlaceholderImage width="45%"/>
+            </MediaQuery>
+            <Margin size="50px"/>
+            <Button>View All Company Photos</Button>
+          </Article>
+        </ScrollableAnchor>
 
-        <Article>
-          <h1 className="section-title">Company Services</h1>
-        </Article>
+        <ScrollableAnchor id={'mission'}>
+          <section className="vision">
+            <MediaQuery query="(max-width: 700px)">
+              <img src={visionImageMobile} alt=""/>
+            </MediaQuery>
+            <MediaQuery query="(min-width: 701px)">
+              <img src={visionImage} alt=""/>
+            </MediaQuery>
+            <div className="company-vision">
+              <div className="info">
+                <h1 className="info-title">Company Vision</h1>
+                <p className="info-description">CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
+              </div>
+              <div className="info">
+                  <h1 className="info-title">Company Mission</h1>
+                  <p className="info-description">CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.</p>
+              </div>
+            </div>
+          </section>
+        </ScrollableAnchor>
+
+        <ScrollableAnchor id={'services'}>
+          <Article>
+            <h1 className="section-title">Company Services</h1>
+          </Article>
+        </ScrollableAnchor>
+
         <div className="services">
           {
             SERVICES.map((service) => { return (
@@ -86,7 +108,7 @@ export default class Company extends Component {
                 <ImageCaption
                   image={service.image}
                   title={service.title}
-                  description={service.description}
+                  description={""}
                 />
               </div>
             )})

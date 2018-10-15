@@ -3,15 +3,23 @@
 }
 
 .app-other {
-  margin-left: 360px;
+  margin-left: 320px;
 }
 
 .app-home{
-  padding-left: 360px;
+  padding-left: 320px;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-image: url('./images/home.png')
 }
 
+@media only screen and (max-width: 1000px) {
+  .app-other {
+    margin-left: 0px;
+  }
 
+  .app-home{
+    padding-left: 0px;
+  }
+}

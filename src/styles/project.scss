@@ -27,7 +27,7 @@
   position: relative;
   .company-description {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 50px;
     width: 450px;
     height: 450px;
@@ -60,10 +60,11 @@
 .filter-button {
   display: flex;
   justify-content: flex-end;
-  padding: 50px;
+  padding: 10px;
+  flex-wrap: wrap;
   padding-bottom: 0px;
   button {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 
@@ -76,9 +77,15 @@
   justify-content: space-evenly;
   padding: 50px;
   .project {
-    width: 250px;
+    width: 25%;
     flex-shrink: 0;
     margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      display: block;
+    }
 
     .hidden-part {
       width: 100%;
@@ -91,6 +98,68 @@
 
     .image-caption .description {
       font-size: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .projects {
+    .project {
+      width: 33.3%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .projects {
+    .project {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    .project {
+      width: 33.3%;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects {
+    .project {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .current-company {
+    .company-description {
+      width: 95%;
+      bottom: 0px;
+      left: 0px;
+      position: relative;
+      background-color: white;
+      color: black;
+      padding: 15px;
+      border-radius: 10px;
+      z-index: 20;
+      margin: 0px auto;
+      margin-top: -100px;
+      margin-bottom: 30px;
+      height: auto;
+      box-shadow: 3px 8px 20px rgba(black, 0.5);
+      .name {
+        color: black;
+      }
+
+    }
+  }
+  .projects {
+    padding: 15px;
+    .project {
+      width:100%;
     }
   }
 }

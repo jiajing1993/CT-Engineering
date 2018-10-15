@@ -14,10 +14,12 @@
   .certifications {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     .cert {
       width: 200px;
       padding: 20px;
+      flex-shrink: 0;
       img {
         height: 80px;
         margin-bottom: 20px;

@@ -1,5 +1,6 @@
 // ./src/pages/Subscribe.js
 import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 // stylesheet
 import '../styles/safety.scss'
@@ -31,7 +32,7 @@ export default class Safety extends Component {
   render() {
     return(
       <div className="safety">
-        <PageJumbotron title="Safety & Quality" image={jumbotronImage}/>
+        <PageJumbotron title="Safety & Quality" image={jumbotronImage} anchors={["Quality Policy Statement", "Quality Objective", "Safety Policy Statement", "Specific Targets"]}/>
         <Article>
           <h1 className="section-title">Working in CT Engineering</h1>
           <p className="section-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis nunc. Ac turpis egestas sed tempus urna et. Cursus risus at ultrices mi tempus.</p>
@@ -59,36 +60,41 @@ export default class Safety extends Component {
             </div>
           </div>
         </Article>
-        <Article maxWidth="550px">
-          <h1 className="section-title">Quality Policy Statement</h1>
-          <p className="section-article">
-            In execution of all project, it is the policy of C.T. Engineering & Construction Sd. Bhd. to Comply with:
-            • The current legislation.
-            • The contractual requirement of our Clients.
-            • The quality requirements of our Clients.
+        <ScrollableAnchor id={'quality-policy-statement'}>
+          <Article maxWidth="550px">
+            <h1 className="section-title">Quality Policy Statement</h1>
+            <p className="section-article">
+              In execution of all project, it is the policy of C.T. Engineering & Construction Sd. Bhd. to Comply with:
+              • The current legislation.
+              • The contractual requirement of our Clients.
+              • The quality requirements of our Clients.
 
-            Our Quality Management System will be continually improved to ensure our total Commitment to our Client.
-          </p>
-        </Article>
-        <Article maxWidth="550px">
-          <h1 className="section-title">Quality Objective</h1>
-          <p className="section-article">
-            In order to achieve our Quality Policy, CT ensures the following Quality Objectives are met:-
-          </p>
-          <p className="section-article">
-            <ul>
-              <li>
-                To meet with Clients requirements of Quality, effectiveness and timely execution of projects by adhering to professional standard working procedures.
-              </li>
-              <li>
-                To have zero repeated nonconformance to quality and safety.
-              </li>
-              <li>
-                To have zero repeated complaint from customer, authority and third party during execution of project.
-              </li>
-            </ul>
-          </p>
-        </Article>
+              Our Quality Management System will be continually improved to ensure our total Commitment to our Client.
+            </p>
+          </Article>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'quality-objective'}>
+          <Article maxWidth="550px">
+            <h1 className="section-title">Quality Objective</h1>
+            <p className="section-article">
+              In order to achieve our Quality Policy, CT ensures the following Quality Objectives are met:-
+            </p>
+            <p className="section-article">
+              <ul>
+                <li>
+                  To meet with Clients requirements of Quality, effectiveness and timely execution of projects by adhering to professional standard working procedures.
+                </li>
+                <li>
+                  To have zero repeated nonconformance to quality and safety.
+                </li>
+                <li>
+                  To have zero repeated complaint from customer, authority and third party during execution of project.
+                </li>
+              </ul>
+            </p>
+          </Article>
+        </ScrollableAnchor>
+
         <Hero image={Image4} >
           <p className="title">
             Let’s Talk About
@@ -96,30 +102,33 @@ export default class Safety extends Component {
             <strong>Safety Management</strong>
           </p>
         </Hero>
-        <Article maxWidth="550px">
-          <h1 className="section-title">Safety Policy Statement</h1>
-          <p className="section-article">The safety unit implements the safety requirements for project sites with references from the following documents:</p>
-          <p className="section-article">The company has its own Safety Manual as a reference for the manage- ment, project managers and line managers in maintaining a good safety culture.</p>
-          <p className="section-article">
-            <ul>
-              <li>Factory and Machinery Act 1967</li>
-              <li>Occupational Safety and Health Act 1994</li>
-              <li>Building Operation and Work of Engineering Construction Regulations 1996 d)Client’s Safety and Health Manual.</li>
-            </ul>
-          </p>
-          <p className="section-article">The company safety manual consists the following contents:</p>
-          <p className="section-article">
-            <ul>
-              <li>CT Health, Safety & Environment Policy</li>
-              <li>Statement of Intent</li>
-              <li>Organization Responsibilities</li>
-              <li>Communication Structure </li>
-              <li>Safety Plan</li>
-              <li>Safety Procedures</li>
-            </ul>
-          </p>
-          <p className="section-article">The safety unit will develop the Project Safety Manual for each individual project pertaining to the scope of works and individual client’s requirements.</p>
-        </Article>
+        <ScrollableAnchor id={'safety-policy-statement'}>
+          <Article maxWidth="550px">
+            <h1 className="section-title">Safety Policy Statement</h1>
+            <p className="section-article">The safety unit implements the safety requirements for project sites with references from the following documents:</p>
+            <p className="section-article">The company has its own Safety Manual as a reference for the manage- ment, project managers and line managers in maintaining a good safety culture.</p>
+            <p className="section-article">
+              <ul>
+                <li>Factory and Machinery Act 1967</li>
+                <li>Occupational Safety and Health Act 1994</li>
+                <li>Building Operation and Work of Engineering Construction Regulations 1996 d)Client’s Safety and Health Manual.</li>
+              </ul>
+            </p>
+            <p className="section-article">The company safety manual consists the following contents:</p>
+            <p className="section-article">
+              <ul>
+                <li>CT Health, Safety & Environment Policy</li>
+                <li>Statement of Intent</li>
+                <li>Organization Responsibilities</li>
+                <li>Communication Structure </li>
+                <li>Safety Plan</li>
+                <li>Safety Procedures</li>
+              </ul>
+            </p>
+            <p className="section-article">The safety unit will develop the Project Safety Manual for each individual project pertaining to the scope of works and individual client’s requirements.</p>
+          </Article>
+        </ScrollableAnchor>
+
         <HeroPyjamas image={Image5}>
           <Padding size="80px">
             <div className="grids objective">
@@ -144,18 +153,20 @@ export default class Safety extends Component {
             </div>
           </Padding>
         </HeroPyjamas>
-        <Article maxWidth="550px">
-          <h1 className="section-title">Specific Targets</h1>
-          <p className="section-article">In conducting C.T Engineering & Construction Sdn Bhd. Business operations and activities, its employees and others involved will strive to:</p>
-          <p className="section-article">
-            <ul>
-              <li>Prevent all accidents and injuries.</li>
-              <li>Prevent all Occupational illnesses.</li>
-              <li>Prevent pollution of the Environment.</li>
-              <li>Prevent Fire hazards and obstacles.</li>
-            </ul>
-          </p>
-        </Article>
+        <ScrollableAnchor id={'specific-targets'}>
+          <Article maxWidth="550px">
+            <h1 className="section-title">Specific Targets</h1>
+            <p className="section-article">In conducting C.T Engineering & Construction Sdn Bhd. Business operations and activities, its employees and others involved will strive to:</p>
+            <p className="section-article">
+              <ul>
+                <li>Prevent all accidents and injuries.</li>
+                <li>Prevent all Occupational illnesses.</li>
+                <li>Prevent pollution of the Environment.</li>
+                <li>Prevent Fire hazards and obstacles.</li>
+              </ul>
+            </p>
+          </Article>
+        </ScrollableAnchor>
         <section>
           <div className="grids">
             <div className="grid">

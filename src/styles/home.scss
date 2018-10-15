@@ -21,3 +21,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .home {
+    padding: 30px;
+    .text-box {
+      font-family: 'Poppins', sans-serif;
+      p.title {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 20px;
+      }
+      p.description {
+        font-size: 16px;
+      }
+    }
+  }
+}

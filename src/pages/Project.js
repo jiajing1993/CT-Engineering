@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import ImageCaption from '../components/ImageCaption'
+import ScrollableAnchor from 'react-scrollable-anchor'
 import Article from '../components/Article'
+import Footer from '../components/Footer'
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../styles/project.scss'
 
@@ -289,6 +291,7 @@ export default class Project extends Component {
     this.setState({
       showedProject: projects[id - 1]
     })
+    console.log(this.state.showedProject)
   }
 
   handleFilter = (status) => {
@@ -307,11 +310,13 @@ export default class Project extends Component {
     return(
       <div>
         <div className="current-company">
-          <ImageGallery items={this.state.showedProject.image}
-            showThumbnails={false}
-            showBullets={true}
-            showPlayButton={false}
-            showFullscreenButton={false} />
+          <ScrollableAnchor id={'current-company'}>
+            <ImageGallery items={this.state.showedProject.image}
+              showThumbnails={false}
+              showBullets={true}
+              showPlayButton={false}
+              showFullscreenButton={false} />
+          </ScrollableAnchor>
           <div className="company-description">
             <p className="name">{this.state.showedProject.client}</p>
             <div className="info">
@@ -342,16 +347,21 @@ export default class Project extends Component {
         <div className="projects">
           {
             this.state.filterProjects.map((project) => { return (
+
               <div key={project.id} className="project" onClick={() => this.handleClick(project.id)}>
-                <ImageCaption
-                  image={project.image[0].original}
-                  title={project.client}
-                  description={""}
-                />
+                <a href="#current-company">
+                  <ImageCaption
+                    image={project.image[0].original}
+                    title={project.client}
+                    description={""}
+                  />
+                </a>
               </div>
+
             )})
           }
         </div>
+        <Footer />
       </div>
     )
   }

@@ -39,9 +39,24 @@
   margin-right: 10px;
   border-radius: 3px;
   transition: all 1s;
+  display: inline-block;
 }
 
 .page-jumbotron .link > a:hover {
   background: rgba(white,0.5);
   transition: all 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-jumbotron{
+    text-align: center;
+  }
+  .page-jumbotron p {
+    margin: 0px auto;
+    margin-bottom: 20px;
+  }
+
+  .page-jumbotron .link {
+    margin: 0px auto;
+  }
 }

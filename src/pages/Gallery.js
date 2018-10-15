@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import PhotoGallery from 'react-grid-gallery';
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
+import Footer from '../components/Footer'
 import jumbotronImage from '../images/company-jumbotron.png'
 
 import '../styles/gallery.scss'
@@ -113,7 +114,7 @@ export default class Gallery extends Component {
   render() {
     return(
       <div>
-        <PageJumbotron title="Images Gallery" image={jumbotronImage}/>
+        <PageJumbotron title="Images Gallery" image={jumbotronImage} anchors={[""]}/>
         <Article>
           <h1 className="section-title">Company Gallery</h1>
           <p className="section-article">
@@ -124,6 +125,7 @@ export default class Gallery extends Component {
         <section className="gallery-section">
           <PhotoGallery images={IMAGES} rowHeight={250} />
         </section>
+        <Footer />
       </div>
     )
   }
