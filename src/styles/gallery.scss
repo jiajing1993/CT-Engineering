@@ -1,6 +1,10 @@
 .gallery-section {
-  padding: 70px 50px;
+  box-sizing: border-box;
+  padding-top: 0px;
   display: block;
+  min-height: 1px;
+  width: 100%;
+  overflow: auto;
 
   h1{
     font-family: Poppins;
@@ -9,4 +13,14 @@
     color: #000000;
     margin-bottom: 40px;
   }
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

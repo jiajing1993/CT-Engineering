@@ -115,15 +115,16 @@ export default class Gallery extends Component {
     return(
       <div>
         <PageJumbotron title="Images Gallery" image={jumbotronImage} anchors={[""]}/>
-        <Article>
+        <Article maxWidth="900px">
           <h1 className="section-title">Company Gallery</h1>
           <p className="section-article">
-              C.T. Engineering & Construction Sdn. Bhd. was incorporated in November 1996,
-              formerly known as C.T. Engineering & Construction established in 1991. CT has grown to be reliable and reputable player in the construction industry and proven the successful track record ranging from industrial buildings, oil & gas industry, material handling, and installation of machinery.
+              Visual help buld trust in that same vein, that we must actually see it to understand it's real.
+              Could you imagine working in a construction and not knowing what sites they've worked on?
           </p>
         </Article>
         <section className="gallery-section">
           <PhotoGallery images={IMAGES} rowHeight={250} />
+          <div className="clearfix"></div>
         </section>
         <Footer />
       </div>

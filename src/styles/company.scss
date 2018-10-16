@@ -8,18 +8,29 @@ div {
 
 .section-title {
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-align: left;
+  &.white-text {
+    color: white;
+  }
 }
 
 .section-article {
-  font-family: 'PT Serif', serif;
+  font-family: Poppins;
   font-size: 18px;
-  line-height: 1.39;
-  text-align: center;
+  line-height: 1.5;
+  text-align: left;
   color: #4a4a4a;
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.white-text {
+    color: white;
+  }
 }
 
 article {
@@ -44,19 +55,19 @@ article {
 
     .info {
       color: white;
-      text-align: center;
+      text-align: left;
       width: 400px;
       flex-shrink: 0;
       margin-bottom: 20px;
       .info-title {
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 38px;
         font-weight: 600;
         margin-bottom: 18px;
       }
       .info-description {
-        font-family: PTSerif;
-        font-size: 18px;
+        font-family: Poppins;
+        font-size: 20px;
         line-height: 1.39;
       }
     }
@@ -109,5 +120,12 @@ article {
     .service {
       width: 100%;
     }
+  }
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-article {
+    font-size: 16px;
   }
 }

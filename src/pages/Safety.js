@@ -1,6 +1,7 @@
 // ./src/pages/Subscribe.js
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import MediaQuery from 'react-responsive';
 
 // stylesheet
 import '../styles/safety.scss'
@@ -23,19 +24,25 @@ import Image2 from '../images/safety/safety_2.png'
 import Image3 from '../images/safety/safety_3.png'
 import Image4 from '../images/safety/safety_4.png'
 import Image5 from '../images/safety/safety_5.png'
+import Image5Mobile from '../images/safety/safety_5_mobile.png'
 import Image6 from '../images/safety/safety_6.png'
 import Image7 from '../images/safety/safety_7.png'
 import Image8 from '../images/safety/safety_8.png'
 import Image9 from '../images/safety/safety_9.png'
+import Image9Mobile from '../images/safety/safety_9_mobile.png'
 
 export default class Safety extends Component {
   render() {
     return(
       <div className="safety">
         <PageJumbotron title="Safety & Quality" image={jumbotronImage} anchors={["Quality Policy Statement", "Quality Objective", "Safety Policy Statement", "Specific Targets"]}/>
-        <Article>
+        <Article maxWidth="900px">
           <h1 className="section-title">Working in CT Engineering</h1>
-          <p className="section-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac odio tempor orci dapibus ultrices in iaculis nunc. Ac turpis egestas sed tempus urna et. Cursus risus at ultrices mi tempus.</p>
+          <p className="section-article">
+            CT Engineering has a safety unit in its organization structure.
+            The safety unit reports to the Managing Director.
+            The safety unit is headed by a safety manager and he/she is responsible to advise and implement all matters related to safety and health.
+          </p>
           <Margin size="50px"/>
           <ImageCaption
             image={Image1}
@@ -61,35 +68,34 @@ export default class Safety extends Component {
           </div>
         </Article>
         <ScrollableAnchor id={'quality-policy-statement'}>
-          <Article maxWidth="550px">
+          <Article maxWidth="900px">
             <h1 className="section-title">Quality Policy Statement</h1>
-            <p className="section-article">
+            <p className="section-article bold">
               In execution of all project, it is the policy of C.T. Engineering & Construction Sd. Bhd. to Comply with:
-              • The current legislation.
-              • The contractual requirement of our Clients.
-              • The quality requirements of our Clients.
-
+            </p>
+            <p className="section-article">
+              <ul class="ul-center">
+                <li>The current legislation.</li>
+                <li>The contractual requirement of our Clients.</li>
+                <li>The quality requirements of our Clients.</li>
+              </ul>
+            </p>
+            <p className="section-article bold">
               Our Quality Management System will be continually improved to ensure our total Commitment to our Client.
             </p>
           </Article>
         </ScrollableAnchor>
         <ScrollableAnchor id={'quality-objective'}>
-          <Article maxWidth="550px">
+          <Article maxWidth="900px">
             <h1 className="section-title">Quality Objective</h1>
-            <p className="section-article">
-              In order to achieve our Quality Policy, CT ensures the following Quality Objectives are met:-
+            <p className="section-article bold">
+              In order to achieve our Quality Policy, CT ensures the following Quality Objectives are met:
             </p>
             <p className="section-article">
               <ul>
-                <li>
-                  To meet with Clients requirements of Quality, effectiveness and timely execution of projects by adhering to professional standard working procedures.
-                </li>
-                <li>
-                  To have zero repeated nonconformance to quality and safety.
-                </li>
-                <li>
-                  To have zero repeated complaint from customer, authority and third party during execution of project.
-                </li>
+                <li>To meet with Clients requirements of Quality, effectiveness and timely execution of projects by adhering to professional standard working procedures.</li>
+                <li>To have zero repeated nonconformance to quality and safety.</li>
+                <li>To have zero repeated complaint from customer, authority and third party during execution of project.</li>
               </ul>
             </p>
           </Article>
@@ -103,10 +109,11 @@ export default class Safety extends Component {
           </p>
         </Hero>
         <ScrollableAnchor id={'safety-policy-statement'}>
-          <Article maxWidth="550px">
+          <Article maxWidth="900px">
             <h1 className="section-title">Safety Policy Statement</h1>
-            <p className="section-article">The safety unit implements the safety requirements for project sites with references from the following documents:</p>
-            <p className="section-article">The company has its own Safety Manual as a reference for the manage- ment, project managers and line managers in maintaining a good safety culture.</p>
+            <p className="section-article bold">
+              The company has its own Safety Manual as a reference for the management, project managers and line managers in maintaining a good safety culture.
+            </p>
             <p className="section-article">
               <ul>
                 <li>Factory and Machinery Act 1967</li>
@@ -114,7 +121,7 @@ export default class Safety extends Component {
                 <li>Building Operation and Work of Engineering Construction Regulations 1996 d)Client’s Safety and Health Manual.</li>
               </ul>
             </p>
-            <p className="section-article">The company safety manual consists the following contents:</p>
+            <p className="section-article bold">The company safety manual consists the following contents:</p>
             <p className="section-article">
               <ul>
                 <li>CT Health, Safety & Environment Policy</li>
@@ -125,38 +132,68 @@ export default class Safety extends Component {
                 <li>Safety Procedures</li>
               </ul>
             </p>
-            <p className="section-article">The safety unit will develop the Project Safety Manual for each individual project pertaining to the scope of works and individual client’s requirements.</p>
+            <p className="section-article bold">The safety unit will develop the Project Safety Manual for each individual project pertaining to the scope of works and individual client’s requirements.</p>
           </Article>
         </ScrollableAnchor>
-
-        <HeroPyjamas image={Image5}>
-          <Padding size="80px">
+        <MediaQuery query="(max-width: 700px)">
+        <HeroPyjamas image={Image5Mobile}>
+          <Padding size="0px">
             <div className="grids objective">
               <div className="grid-10">
-                <h1>Objective</h1>
-                <Margin size="30px" />
-                <p>C.T Engineering & Construction Sdn Bhd. Will conduct its operations to meet its objectives:</p>
-                <p>
-                  To ensure workplace safety and encourage good Occupational Safety and Health to Employees and others who may be affected alike.
-
-                  To increase employee's Moral, Safe Working ethics and good discipline to achieve Free accident status in the business operations.
-
-                  To establish better relations between Management/Employees.
-
-                  To lower operating insurance costs by safe operating performance.
-
-                  To maintain local and International Standards in Occupational Safety and Health.
-
-                  Prevent 'Loss Time' on Man-hours and Production.
+                <Article maxWidth="900px">
+                <h1 className="section-title white-text">Objective</h1>
+                <p className="section-article bold white-text">
+                  C.T Engineering & Construction Sdn Bhd. Will conduct its operations to meet its objectives:
                 </p>
+                <p className="section-article white-text">
+                  <ul>
+                    <li>To ensure workplace safety and encourage good Occupational Safety and Health to Employees and others who may be affected alike.</li>
+                    <li>To increase employee's Moral, Safe Working ethics and good discipline to achieve Free accident status in the business operations.</li>
+                    <li>To establish better relations between Management/Employees.</li>
+                    <li>To lower operating insurance costs by safe operating performance.</li>
+                    <li>To maintain local and International Standards in Occupational Safety and Health.</li>
+                    <li>Prevent 'Loss Time' on Man-hours and Production.</li>
+                  </ul>
+                </p>
+                </Article>
               </div>
             </div>
           </Padding>
         </HeroPyjamas>
+
+        </MediaQuery>
+        <MediaQuery query="(min-width: 701px)">
+        <HeroPyjamas image={Image5}>
+          <Padding size="80px">
+            <div className="grids objective">
+              <div className="grid-10">
+                <Article maxWidth="900px">
+                <h1 className="section-title white-text">Objective</h1>
+                <p className="section-article bold white-text">
+                  C.T Engineering & Construction Sdn Bhd. Will conduct its operations to meet its objectives:
+                </p>
+                <p className="section-article white-text">
+                  <ul>
+                    <li>To ensure workplace safety and encourage good Occupational Safety and Health to Employees and others who may be affected alike.</li>
+                    <li>To increase employee's Moral, Safe Working ethics and good discipline to achieve Free accident status in the business operations.</li>
+                    <li>To establish better relations between Management/Employees.</li>
+                    <li>To lower operating insurance costs by safe operating performance.</li>
+                    <li>To maintain local and International Standards in Occupational Safety and Health.</li>
+                    <li>Prevent 'Loss Time' on Man-hours and Production.</li>
+                  </ul>
+                </p>
+                </Article>
+              </div>
+            </div>
+          </Padding>
+        </HeroPyjamas>
+        </MediaQuery>
+
+
         <ScrollableAnchor id={'specific-targets'}>
-          <Article maxWidth="550px">
+          <Article maxWidth="900px">
             <h1 className="section-title">Specific Targets</h1>
-            <p className="section-article">In conducting C.T Engineering & Construction Sdn Bhd. Business operations and activities, its employees and others involved will strive to:</p>
+            <p className="section-article bold">In conducting C.T Engineering & Construction Sdn Bhd. Business operations and activities, its employees and others involved will strive to:</p>
             <p className="section-article">
               <ul>
                 <li>Prevent all accidents and injuries.</li>
@@ -171,40 +208,65 @@ export default class Safety extends Component {
           <div className="grids">
             <div className="grid">
               <HeroPyjamas image={Image6}>
-                <Padding size="30px 20px">
+                <Padding size="40px 30px 0px 30px">
                   <h1 className="big-text dark-text">Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
                 </Padding>
               </HeroPyjamas>
             </div>
             <div className="grid">
               <HeroPyjamas image={Image7}>
-                <Padding size="30px 20px">
-                  <h1 className="big-text white-text">Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
+                <Padding size="40px 30px 0px 30px">
+                  <h1 className="big-text white-text">Employers have duties concerning the provision and use of personal protective equipment (PPE) at work.</h1>
                 </Padding>
               </HeroPyjamas>
             </div>
             <div className="grid">
               <HeroPyjamas image={Image8}>
-                <Padding size="30px 20px">
-                  <h1 className="big-text dark-text">Our Engineer are always make sure the ground are saved. From the top, the picture are even clearer.</h1>
+                <Padding size="40px 30px 0px 30px">
+                  <h1 className="big-text dark-text">Construction Supervisors are responsible for supervising the contractors and staff while maintaining a safe work environment.</h1>
                 </Padding>
               </HeroPyjamas>
             </div>
           </div>
         </section>
-        <HeroPyjamas image={Image9}>
-          <Padding size="80px">
-            <div className="grids operating-culture center">
-              <div className="grid-5">
-                <h1>Safe Working Environment and Operating Culture</h1>
-                <Margin size="40px" />
-                <p>C.T Engineering & Construction Sdn Bhd. Primary goal is to manage by developing a "SAFE WORKING ENVIROMENT AND OPERATING CULTURE" in the business operations and activities leading to an accident – free workplace and Maintain at all times good healthy practices for employees. Ensure co-operation with building management to develop and execute contingency plans to deal with possible emergency and adverse impact to employees.</p>
-              </div>
-              <div className="grid-5">
-              </div>
-            </div>
-          </Padding>
-        </HeroPyjamas>
+
+              <MediaQuery query="(max-width: 700px)">
+              <HeroPyjamas image={Image9Mobile}>
+              <Padding size="15px">
+                  <div className="grids operating-culture center">
+
+                <div className="grid-10">
+                  <h1>Safe Working Environment
+                  <br/>
+                  & Operating Culture</h1>
+                  <Margin size="40px" />
+                  <p>
+                  <strong>C.T Engineering & Construction Sdn Bhd. </strong>
+                  primary goal is to manage by developing a "SAFE WORKING ENVIROMENT AND OPERATING CULTURE" in the business operations and activities leading to an accident – free workplace and Maintain at all times good healthy practices for employees. Ensure co-operation with building management to develop and execute contingency plans to deal with possible emergency and adverse impact to employees.</p>
+                </div>
+                </div>
+                </Padding></HeroPyjamas>
+
+              </MediaQuery>
+              <MediaQuery query="(min-width: 701px)">
+              <HeroPyjamas image={Image9}>
+              <Padding size="80px">
+                  <div className="grids operating-culture center">
+                <div className="grid-7">
+                  <h1>Safe Working Environment
+                  <br/>
+                  & Operating Culture</h1>
+                  <Margin size="40px" />
+                  <p>
+                  <strong>C.T Engineering & Construction Sdn Bhd. </strong>
+                  primary goal is to manage by developing a "SAFE WORKING ENVIROMENT AND OPERATING CULTURE" in the business operations and activities leading to an accident – free workplace and Maintain at all times good healthy practices for employees. Ensure co-operation with building management to develop and execute contingency plans to deal with possible emergency and adverse impact to employees.</p>
+                </div>
+                <div className="grid-3">
+                </div>
+                </div>
+                </Padding></HeroPyjamas>
+
+              </MediaQuery>
         <Footer />
       </div>
     )
