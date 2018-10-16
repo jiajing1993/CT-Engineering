@@ -33,7 +33,7 @@ const SERVICES = [
     image: `${IndustrialBuildingConstruction}`
   },
   {
-    title: "Fabircation (Structural Steel)",
+    title: "Fabrication (Structural Steel)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: `${FabircationStructuralSteel}`
   },

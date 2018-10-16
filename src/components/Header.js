@@ -3,13 +3,30 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/header.scss';
 import logo from '../images/ct-logo.png';
+import { withRouter } from 'react-router'
 
-export default class Header extends Component {
+class Header extends Component {
   constructor(props){
     super(props)
     this.state = {
       isHidden: false,
+      floatingButton: false
     }
+  }
+
+  componentDidMount() {
+    let that = this;
+    window.onscroll = function() {
+      if(window.pageYOffset > 200) {
+        that.setState({
+          floatingButton: true,
+        })
+      }else{
+        that.setState({
+          floatingButton: false,
+        })
+      }
+    };
   }
 
   toggleHeader = () => {
@@ -23,13 +40,13 @@ export default class Header extends Component {
       <div>
         <header className={`${ this.state.isHidden ? "hide" : ""}`}>
           <div className="upper-header">
-            <Link to="/">
+            <Link to="/" onClick={this.toggleHeader}>
               <img src={logo} alt=""/>
             </Link>
-            <Link to="/company">Company</Link>
-            <Link to="/project">Projects</Link>
-            <Link to="/safety">Safety & Quality</Link>
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/company" className={`${this.props.location.pathname === "/company" ? "active" : ""}`} onClick={this.toggleHeader}>Company</Link>
+            <Link to="/project" className={`${this.props.location.pathname === "/project" ? "active" : ""}`} onClick={this.toggleHeader}>Projects</Link>
+            <Link to="/safety" className={`${this.props.location.pathname === "/safety" ? "active" : ""}`} onClick={this.toggleHeader}>Safety & Quality</Link>
+            <Link to="/gallery" className={`${this.props.location.pathname === "/gallery" ? "active" : ""}`} onClick={this.toggleHeader}>Gallery</Link>
           </div>
           <div className="bottom-header">
             <p>C.T. Engineering & Construction Sdn. Bhd.</p>
@@ -40,7 +57,7 @@ export default class Header extends Component {
             <p>Copyright © 2018 - All Rights Reserved.</p>
           </div>
         </header>
-        <div className="toggle" onClick={this.toggleHeader}>
+        <div className={`toggle ${ this.state.floatingButton ? "floating" : ""}`} onClick={this.toggleHeader}>
           <div className={`nav-icon1 ${ this.state.isHidden ? "open" : ""}`}>
             <span></span>
             <span></span>
@@ -51,3 +68,6 @@ export default class Header extends Component {
     )
   }
 }
+
+const AppWithRouter = withRouter(Header)
+export default AppWithRouter;
