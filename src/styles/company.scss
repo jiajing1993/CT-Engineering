@@ -55,19 +55,19 @@ article {
 
     .info {
       color: white;
-      text-align: center;
+      text-align: left;
       width: 400px;
       flex-shrink: 0;
       margin-bottom: 20px;
       .info-title {
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 38px;
         font-weight: 600;
         margin-bottom: 18px;
       }
       .info-description {
-        font-family: PTSerif;
-        font-size: 18px;
+        font-family: Poppins;
+        font-size: 20px;
         line-height: 1.39;
       }
     }

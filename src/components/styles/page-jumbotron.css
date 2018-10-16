@@ -11,22 +11,11 @@
   position: absolute;
   width: calc(100% - 40px);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-flow: row wrap;
   left: 20px;
   bottom: 20px;
-}
-
-.page-jumbotron p {
-  font-family: Poppins;
-  font-size: 24px;
-  font-weight: 500;
-  color: #ffffff;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .page-jumbotron .link > a {
@@ -48,15 +37,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .page-jumbotron{
-    text-align: center;
+  .page-jumbotron nav {
+    justify-content: flex-start;
   }
-  .page-jumbotron p {
-    margin: 0px auto;
-    margin-bottom: 20px;
-  }
-
-  .page-jumbotron .link {
-    margin: 0px auto;
+  .page-jumbotron .link > a {
+    display: block;
   }
 }

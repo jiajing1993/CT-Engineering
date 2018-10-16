@@ -30,6 +30,10 @@
     width: 50%;
     flex-shrink: 0;
   }
+  .grid-5-with-gap {
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+  }
   .grid-10 {
     width: 100%;
     flex-shrink: 0;

@@ -6,12 +6,11 @@ export default class PageJumbotron extends Component {
     return str1.trim().toLowerCase().replace(/[^a-zA-Z0-9 -]/, "").replace(/\s/g, "-");
   };
   render() {
-    const { title, image } = this.props
+    const { image } = this.props
 
     return (
       <section className="page-jumbotron" style={{backgroundImage: `url(${image})`}} >
         <nav>
-          <p>{ title }</p>
           <div className="link">
             {
               this.props.anchors.map((anchor) => {

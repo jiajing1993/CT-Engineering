@@ -115,7 +115,7 @@ export default class Gallery extends Component {
     return(
       <div>
         <PageJumbotron title="Images Gallery" image={jumbotronImage} anchors={[""]}/>
-        <Article>
+        <Article maxWidth="900px">
           <h1 className="section-title">Company Gallery</h1>
           <p className="section-article">
               C.T. Engineering & Construction Sdn. Bhd. was incorporated in November 1996,
@@ -124,6 +124,7 @@ export default class Gallery extends Component {
         </Article>
         <section className="gallery-section">
           <PhotoGallery images={IMAGES} rowHeight={250} />
+          <div className="clearfix"></div>
         </section>
         <Footer />
       </div>
