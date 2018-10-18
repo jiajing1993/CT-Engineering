@@ -118,7 +118,7 @@ export default class Gallery extends Component {
         <Article maxWidth="900px">
           <h1 className="section-title">Company Gallery</h1>
           <p className="section-article">
-              Visual help buld trust in that same vein, that we must actually see it to understand it's real.
+              Visual help build trust in that same vein, that we must actually see it to understand it's real.
               Could you imagine working in a construction and not knowing what sites they've worked on?
           </p>
         </Article>
