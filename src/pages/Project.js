@@ -12,6 +12,7 @@ import apex1 from '../images/projects/apex/image1.JPG'
 import apex2 from '../images/projects/apex/image2.JPG'
 import apex3 from '../images/projects/apex/image3.JPG'
 import apex4 from '../images/projects/apex/image4.JPG'
+import apex5 from '../images/projects/apex/image5.JPG'
 
 import cSteinJohor1 from '../images/projects/c-steinweg(johor)/image1.JPG'
 import cSteinJohor2 from '../images/projects/c-steinweg(johor)/image2.JPG'
@@ -20,10 +21,14 @@ import cSteinJohor3 from '../images/projects/c-steinweg(johor)/image3.JPG'
 import cSteinKlang1 from '../images/projects/c-steinweg(klang)/image1.JPG'
 import cSteinKlang2 from '../images/projects/c-steinweg(klang)/image2.JPG'
 import cSteinKlang3 from '../images/projects/c-steinweg(klang)/image3.JPG'
+import cSteinKlang4 from '../images/projects/c-steinweg(klang)/image4.JPG'
+import cSteinKlang5 from '../images/projects/c-steinweg(klang)/image5.JPG'
+import cSteinKlang6 from '../images/projects/c-steinweg(klang)/image6.JPG'
 
 import honda1 from '../images/projects/honda/image1.JPG'
 import honda2 from '../images/projects/honda/image2.JPG'
 import honda3 from '../images/projects/honda/image3.JPG'
+import honda4 from '../images/projects/honda/image4.JPG'
 
 import lss1 from '../images/projects/lss/image1.JPG'
 import lss2 from '../images/projects/lss/image2.JPG'
@@ -79,6 +84,9 @@ const projects = [
       },
       {
         original: `${apex4}`
+      },
+      {
+        original: `${apex5}`
       }
     ]
   },{
@@ -98,6 +106,15 @@ const projects = [
       },
       {
         original: `${cSteinKlang3}`
+      },
+      {
+        original: `${cSteinKlang4}`
+      },
+      {
+        original: `${cSteinKlang5}`
+      },
+      {
+        original: `${cSteinKlang6}`
       }
     ]
   },{
@@ -117,6 +134,9 @@ const projects = [
       },
       {
         original: `${honda3}`
+      },
+      {
+        original: `${honda4}`
       }
     ]
   },{

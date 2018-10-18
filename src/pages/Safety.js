@@ -118,7 +118,9 @@ export default class Safety extends Component {
               <ul>
                 <li>Factory and Machinery Act 1967</li>
                 <li>Occupational Safety and Health Act 1994</li>
-                <li>Building Operation and Work of Engineering Construction Regulations 1996 d)Client’s Safety and Health Manual.</li>
+                <li>Building Operation and Work of Engineering Construction Regulations 1996</li>
+                <li>Client’s Safety and Health Manual</li>
+
               </ul>
             </p>
             <p className="section-article bold">The company safety manual consists the following contents:</p>
