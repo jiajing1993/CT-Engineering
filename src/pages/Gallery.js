@@ -8,20 +8,26 @@ import jumbotronImage from '../images/company-jumbotron.png'
 
 import '../styles/gallery.scss'
 
-import Image1 from '../images/gallery/gallery_1.jpg'
-import Image2 from '../images/gallery/gallery_2.jpg'
-import Image3 from '../images/gallery/gallery_3.jpg'
-import Image4 from '../images/gallery/gallery_4.jpg'
-import Image5 from '../images/gallery/gallery_5.jpg'
-import Image6 from '../images/gallery/gallery_6.jpg'
+import Image1 from '../images/gallery/gallery_1.JPG'
+import Image2 from '../images/gallery/gallery_2.JPG'
+import Image3 from '../images/gallery/gallery_3.JPG'
+import Image4 from '../images/gallery/gallery_4.JPG'
+import Image5 from '../images/gallery/gallery_5.JPG'
+import Image6 from '../images/gallery/gallery_6.JPG'
 import Image7 from '../images/gallery/gallery_7.JPG'
-import Image8 from '../images/gallery/gallery_8.jpg'
-import Image9 from '../images/gallery/gallery_9.jpg'
-import Image10 from '../images/gallery/gallery_9.jpg'
-import Image11 from '../images/gallery/gallery_11.jpg'
-import Image12 from '../images/gallery/gallery_12.jpg'
-import Image13 from '../images/gallery/gallery_13.jpg'
-import Image14 from '../images/gallery/gallery_14.jpg'
+import Image8 from '../images/gallery/gallery_8.JPG'
+import Image9 from '../images/gallery/gallery_9.JPG'
+import Image10 from '../images/gallery/gallery_9.JPG'
+import Image11 from '../images/gallery/gallery_11.JPG'
+import Image12 from '../images/gallery/gallery_12.JPG'
+import Image13 from '../images/gallery/gallery_13.JPG'
+import Image14 from '../images/gallery/gallery_14.JPG'
+import Image15 from '../images/gallery/gallery_15.JPG'
+import Image16 from '../images/gallery/gallery_16.JPG'
+import Image17 from '../images/gallery/gallery_17.JPG'
+import Image18 from '../images/gallery/gallery_18.JPG'
+import Image19 from '../images/gallery/gallery_19.JPG'
+import Image20 from '../images/gallery/gallery_20.JPG'
 
 
 const IMAGES =[{
@@ -107,6 +113,42 @@ const IMAGES =[{
   thumbnail: `${Image14}`,
   thumbnailWidth: 1000,
   thumbnailHeight: 600
+},
+{
+  src: `${Image15}`,
+  thumbnail: `${Image15}`,
+  thumbnailWidth: 500,
+  thumbnailHeight: 300
+},
+{
+  src: `${Image16}`,
+  thumbnail: `${Image16}`,
+  thumbnailWidth: 500,
+  thumbnailHeight: 300
+},
+{
+  src: `${Image17}`,
+  thumbnail: `${Image17}`,
+  thumbnailWidth: 500,
+  thumbnailHeight: 300
+},
+{
+  src: `${Image18}`,
+  thumbnail: `${Image18}`,
+  thumbnailWidth: 500,
+  thumbnailHeight: 300
+},
+{
+  src: `${Image19}`,
+  thumbnail: `${Image19}`,
+  thumbnailWidth: 500,
+  thumbnailHeight: 300
+},
+{
+  src: `${Image20}`,
+  thumbnail: `${Image20}`,
+  thumbnailWidth: 500,
+  thumbnailHeight: 300
 }
 ]
 

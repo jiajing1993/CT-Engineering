@@ -1,3 +1,13 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+.modal-video-movie-wrap {
+  width: 90%;
+  margin: 0px auto;
+}
+.modal-video-close-btn {
+  box-shadow: none;
+  padding: 0;
+  right: 0;
+}
 .home {
   height: 100%;
   width: 100%;
