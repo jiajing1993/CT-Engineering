@@ -21,6 +21,7 @@ import Image10 from '../images/gallery/gallery_9.JPG'
 import Image11 from '../images/gallery/gallery_11.JPG'
 import Image12 from '../images/gallery/gallery_12.JPG'
 import Image13 from '../images/gallery/gallery_13.JPG'
+import Image14 from '../images/gallery/gallery_14.JPG'
 import Image15 from '../images/gallery/gallery_15.JPG'
 import Image16 from '../images/gallery/gallery_16.JPG'
 import Image17 from '../images/gallery/gallery_17.JPG'
@@ -104,6 +105,12 @@ const IMAGES =[{
 {
   src: `${Image13}`,
   thumbnail: `${Image13}`,
+  thumbnailWidth: 1200,
+  thumbnailHeight: 600
+},
+{
+  src: `${Image14}`,
+  thumbnail: `${Image14}`,
   thumbnailWidth: 1200,
   thumbnailHeight: 600
 },
