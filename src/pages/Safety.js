@@ -7,8 +7,6 @@ import MediaQuery from 'react-responsive';
 import '../styles/safety.scss'
 
 // custom components
-import PlaceholderImage from '../components/PlaceholderImage'
-import BackgroundImage from '../components/BackgroundImage'
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
 import ImageCaption from '../components/ImageCaption'

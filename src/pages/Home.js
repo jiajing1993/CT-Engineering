@@ -1,7 +1,6 @@
 // ./src/pages/Subscribe.js
 import React, { Component } from 'react';
 import '../styles/home.scss'
-import Button from '../components/Button'
 import ModalVideo from 'react-modal-video'
 
 export default class Home extends Component {

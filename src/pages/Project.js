@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import ImageCaption from '../components/ImageCaption'
 import ScrollableAnchor from 'react-scrollable-anchor'
-import Article from '../components/Article'
 import Footer from '../components/Footer'
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../styles/project.scss'

@@ -6,10 +6,8 @@ import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 
 // customize components
-import PlaceholderImage from '../components/PlaceholderImage'
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
-import Button from '../components/Button'
 import { Margin } from '../components/Utility'
 import ImageCaption from '../components/ImageCaption'
 import Footer from '../components/Footer'
