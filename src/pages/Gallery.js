@@ -8,12 +8,11 @@ import jumbotronImage from '../images/company-jumbotron.png'
 
 import '../styles/gallery.scss'
 
-import Image1 from '../images/gallery/gallery_1.JPG'
 
 
 const IMAGES =[{
-  src: `${Image1}`,
-  thumbnail: `${Image1}`,
+  src: "https://4b15vr13762d1t2kqp47j8d4-wpengine.netdna-ssl.com/wp-content/uploads/construction-site-2858310_1920.jpg",
+  thumbnail: "{https://4b15vr13762d1t2kqp47j8d4-wpengine.netdna-ssl.com/wp-content/uploads/construction-site-2858310_1920.jpg",
   thumbnailWidth: 500,
   thumbnailHeight: 300
 }
