@@ -5,6 +5,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 
+
 // customize components
 import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
