@@ -1,0 +1,15 @@
+.article {
+  width: 80%;
+}
+
+@media screen and (max-width: 600px){
+  .article {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .article {
+    width: 85%;
+  }
+}

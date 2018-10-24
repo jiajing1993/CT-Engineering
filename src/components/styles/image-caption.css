@@ -46,3 +46,15 @@
   font-family: PTSerif;
   font-size: 14px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .image-caption .title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-caption .title {
+    font-size: 14px;
+  }
+}

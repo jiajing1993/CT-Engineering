@@ -48,6 +48,7 @@ class Header extends Component {
             <Link to="/safety" className={`${this.props.location.pathname === "/safety" ? "active" : ""}`} onClick={this.toggleHeader}>Safety & Quality</Link>
             <Link to="/gallery" className={`${this.props.location.pathname === "/gallery" ? "active" : ""}`} onClick={this.toggleHeader}>Gallery</Link>
           </div>
+          <div className="hidden-bottom-header"></div>
           <div className="bottom-header">
             <p>C.T. Engineering & Construction Sdn. Bhd.</p>
             <p>764, Jalan Platinum Utama, 81700 Pasir Gudang, Johor</p>
@@ -58,7 +59,7 @@ class Header extends Component {
           </div>
         </header>
         <div className={`toggle ${ this.state.floatingButton ? "floating" : ""}`} onClick={this.toggleHeader}>
-          <div className={`nav-icon1 ${ this.state.isHidden ? "open" : ""}`}>
+          <div className={`span-wrapper ${ this.state.isHidden ? "open" : ""}`}>
             <span></span>
             <span></span>
             <span></span>
