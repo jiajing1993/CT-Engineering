@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import MediaQuery from 'react-responsive';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount'
 
 // stylesheet
 import '../styles/safety.scss'
@@ -33,6 +34,7 @@ export default class Safety extends Component {
   render() {
     return(
       <div className="safety">
+        <ScrollToTopOnMount />
         <PageJumbotron title="Safety & Quality" image={jumbotronImage} anchors={["Quality Policy Statement", "Quality Objective", "Safety Policy Statement", "Specific Targets"]}/>
         <Article maxWidth="900px">
           <h1 className="section-title">Working in CT Engineering</h1>

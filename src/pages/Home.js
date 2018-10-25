@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import '../styles/home.scss'
 import ModalVideo from 'react-modal-video'
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount'
 
 export default class Home extends Component {
   constructor () {
@@ -19,6 +20,7 @@ export default class Home extends Component {
   render() {
     return(
       <div className="home">
+        <ScrollToTopOnMount />
         <div className="text-box">
           <p className="title">The True Passion of vigor. </p>
           <p className="description">We will build rapport, trust and the foundation in which our reputation will rest rock solid and assure into the future.</p>

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import ImageCaption from '../components/ImageCaption'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount'
 import Footer from '../components/Footer'
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../styles/project.scss'
@@ -328,6 +329,7 @@ export default class Project extends Component {
   render() {
     return(
       <div>
+        <ScrollToTopOnMount />
         <div className="current-company">
           <ScrollableAnchor id={'current-company'}>
             <ImageGallery items={this.state.showedProject.image}

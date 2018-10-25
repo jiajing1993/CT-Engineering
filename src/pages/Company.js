@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 // customize components
 import PageJumbotron from '../components/PageJumbotron'
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount'
 import Article from '../components/Article'
 import { Margin } from '../components/Utility'
 import ImageCaption from '../components/ImageCaption'
@@ -52,6 +53,7 @@ export default class Company extends Component {
   render() {
     return(
       <div className="company">
+        <ScrollToTopOnMount />
         <PageJumbotron title="Company Profile" image={jumbotronImage} anchors={["Company", "Vision & Mission", "Services"]}/>
         <ScrollableAnchor id={'company'}>
           <Article maxWidth="900px">
@@ -123,8 +125,8 @@ export default class Company extends Component {
             <Margin size="50px"/>
             <div className="services">
             {
-              SERVICES.map((service) => { return (
-                <div className="service">
+              SERVICES.map((service, index) => { return (
+                <div key={index} className="service">
                   <ImageCaption
                     image={service.image}
                     title={service.title}
