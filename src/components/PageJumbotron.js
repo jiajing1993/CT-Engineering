@@ -13,9 +13,9 @@ export default class PageJumbotron extends Component {
         <nav>
           <div className="link">
             {
-              this.props.anchors.map((anchor) => {
+              this.props.anchors.map((anchor, index) => {
                 return (
-                  <a href={`#${this.string_parameterize(anchor)}`}>{anchor}</a>
+                  <a key={index + 1} href={`#${this.string_parameterize(anchor)}`}>{anchor}</a>
                 )
               })
             }
