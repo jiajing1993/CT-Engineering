@@ -142,7 +142,23 @@ header {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media screen and (max-width: 600px) {
+  header {
+    width: 250px;
+    overflow-y: scroll;
+    .upper-header{
+      a {
+        font-size: 14px;
+        img {
+          width: 50px;
+          margin: 10px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
   header {
     width: 250px;
     overflow-y: scroll;
