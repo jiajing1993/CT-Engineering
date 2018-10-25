@@ -5,6 +5,7 @@ import PageJumbotron from '../components/PageJumbotron'
 import Article from '../components/Article'
 import Footer from '../components/Footer'
 import jumbotronImage from '../images/company-jumbotron.png'
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount'
 
 import '../styles/gallery.scss'
 
@@ -25,6 +26,7 @@ export default class Gallery extends Component {
   render() {
     return(
       <div>
+        <ScrollToTopOnMount />
         <PageJumbotron title="Images Gallery" image={jumbotronImage} anchors={[""]}/>
         <Article maxWidth="900px">
           <h1 className="section-title">Company Gallery</h1>
