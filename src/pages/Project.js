@@ -344,10 +344,10 @@ export default class Project extends Component {
               <span>Scope of Work</span>
               { this.state.showedProject.title }
             </div>
-            <p className="info">
+            {/* <p className="info">
               <span>Value</span>
               {this.state.showedProject.value}
-            </p>
+            </p> */}
 
             <p className="info">
               <span>Business</span>
