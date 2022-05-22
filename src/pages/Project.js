@@ -329,7 +329,7 @@ const projects = [
     client: "Excel Precast sdn bhd",
     completionDate: "October 2022",
     value: "-",
-    business: "Manufacturing and Trading of precast and prefebricated concretes, bricks, stonres or other building & construction materials.",
+    business: "Manufacturing and Trading of precast and prefebricated concretes, bricks, stones or other building & construction materials.",
     image: [
       { original: `${excel1}` },
       { original: `${excel2}` },
