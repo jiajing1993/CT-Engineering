@@ -1,4 +1,7 @@
 // ./src/pages/Subscribe.js
+
+// status: "onGoing",
+
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import ImageCaption from '../components/ImageCaption'
@@ -61,6 +64,16 @@ import xinhwa2 from '../images/projects/xinhwa/image2.JPG'
 import xinhwa3 from '../images/projects/xinhwa/image3.JPG'
 import xinhwa4 from '../images/projects/xinhwa/image4.JPG'
 
+import songseng1 from '../images/projects/songseng/image1.jpg'
+import songseng2 from '../images/projects/songseng/image2.jpg'
+import songseng3 from '../images/projects/songseng/image3.jpg'
+import songseng4 from '../images/projects/songseng/image4.jpg'
+
+import excel1 from '../images/projects/excel-precas/image1.jpg'
+import excel2 from '../images/projects/excel-precas/image2.jpg'
+import excel3 from '../images/projects/excel-precas/image3.jpg'
+import excel4 from '../images/projects/excel-precas/image4.jpg'
+
 
 
 const projects = [
@@ -91,7 +104,7 @@ const projects = [
     ]
   },{
     id: 2,
-    status: "onGoing",
+    status: "completed",
     title: "1 unit of metal storage warehouse, 2 units of chemical storage warehouse, 2 units of non-hazardous warehouse and 2 units double storey office building, canteen, and other ancillary building",
     client: "C.Steinweg Logistics (Malaysia) Sdn. Bhd",
     completionDate: "December 2018",
@@ -182,7 +195,7 @@ const projects = [
     ]
   },{
     id: 6,
-    status: "onGoing",
+    status: "completed",
     title: "1 unit of single storey factory building composed of food production warehouse, packaging room, finsihed goods storage, logistic warehouse, 1 unit of double storey office building, 2 units utility building, 2 units of pump house, 1 units of TNB electric building, piping works and storage tanks",
     client: "Unigra Food Processing Asia Pacific Sdn. Bhd",
     completionDate: "December 2018",
@@ -207,7 +220,7 @@ const projects = [
     ]
   },{
     id: 7,
-    status: "onGoing",
+    status: "completed",
     title: "Single storey warehouse building, Double storey office building and other ancillary buildings",
     client: "Pantech Reality Sdn. Bhd",
     completionDate: "December 2018",
@@ -293,6 +306,36 @@ const projects = [
         original: `${xinhwa4}`
       }
     ]
+  },
+  {
+    id: 11,
+    status: "onGoing",
+    title: "Triple storey Warehouse along with mezzanine level office",
+    client: "Song Seng associates (JB) sdn bhd",
+    completionDate: "June 2022",
+    value: "-",
+    business: "Reality Investment",
+    image: [
+      { original: `${songseng1}` },
+      { original: `${songseng2}` },
+      { original: `${songseng3}` },
+      { original: `${songseng4}` }
+    ]
+  },
+  {
+    id: 12,
+    status: "onGoing",
+    title: "Single storey open factory with storage space, offices and laboratories, guard house and more",
+    client: "Excel Precast sdn bhd",
+    completionDate: "October 2022",
+    value: "-",
+    business: "Manufacturing and Trading of precast and prefebricated concretes, bricks, stonres or other building & construction materials.",
+    image: [
+      { original: `${excel1}` },
+      { original: `${excel2}` },
+      { original: `${excel3}` },
+      { original: `${excel4}` }
+    ]
   }
 ]
 
@@ -344,10 +387,10 @@ export default class Project extends Component {
               <span>Scope of Work</span>
               { this.state.showedProject.title }
             </div>
-            {/* <p className="info">
+            <p className="info">
               <span>Value</span>
               {this.state.showedProject.value}
-            </p> */}
+            </p>
 
             <p className="info">
               <span>Business</span>
@@ -364,7 +407,6 @@ export default class Project extends Component {
           <button onClick={() => this.handleFilter("completed")}>Completed</button>
           <button onClick={() => this.handleFilter("onGoing")}>OnGoing</button>
         </div>
-
         <div className="projects">
           {
             this.state.filterProjects.map((project) => { return (
