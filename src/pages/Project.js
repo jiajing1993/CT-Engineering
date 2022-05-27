@@ -67,7 +67,6 @@ import xinhwa4 from '../images/projects/xinhwa/image4.JPG'
 import songseng1 from '../images/projects/songseng/image1.jpg'
 import songseng2 from '../images/projects/songseng/image2.jpg'
 import songseng3 from '../images/projects/songseng/image3.jpg'
-import songseng4 from '../images/projects/songseng/image4.jpg'
 
 import excel1 from '../images/projects/excel-precas/image1.jpg'
 import excel2 from '../images/projects/excel-precas/image2.jpg'
@@ -318,8 +317,7 @@ const projects = [
     image: [
       { original: `${songseng1}` },
       { original: `${songseng2}` },
-      { original: `${songseng3}` },
-      { original: `${songseng4}` }
+      { original: `${songseng3}` }
     ]
   },
   {
